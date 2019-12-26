@@ -33,9 +33,9 @@ Step 3. Process datasets
 
 3.1. Git clone all .py files to <User_root_path>.
 
-3.2. Process vireo172 data: run the following file to get all algorithm inputs and related files.\ 
-`python ingre_process-vireo.py --data_path <User_root_path> + '/vireo/SplitAndIngreLabel/'`\  
-The results will be saved to '/vireo/SplitAndIngreLabel'.
+3.2. Process vireo172 data: run the following file to get all algorithm inputs and related files. 
+\ `python ingre_process-vireo.py --data_path <User_root_path> + '/vireo/SplitAndIngreLabel/'`  
+\The results will be saved to '/vireo/SplitAndIngreLabel'.
 
 3.3. Process ingredient101 data: run python ingre_process-food101.py --data_path <User_root_path> + '/food-101/data/' --glove_root_path <User_root_path> + '/vireo/SplitAndIngreLabel/'. All algorithm inputs and related files will be saved to '/food-101/data/'
 
