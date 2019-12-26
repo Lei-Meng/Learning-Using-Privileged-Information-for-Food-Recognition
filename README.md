@@ -1,4 +1,4 @@
-# Food
+# Learning Using Privileged Information for Food Recognition
 
 **Note: Our implementation provided in this repository is patent-banned: ILO Ref: 2019-243-01, SG Non-Provisional Application No. 10201907991T, Singapore, 29 Aug., 2019. Please contact the Author for commercialization usage.**  
 
