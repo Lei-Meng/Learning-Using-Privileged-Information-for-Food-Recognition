@@ -17,7 +17,7 @@ This repository provides our Pytorch implementation of the cross-modal alignment
 
 Please follow the steps below to reproduce ATNet for food recognition:
 
-Step 1. Download datasets and related files
+##Step 1. Download datasets and related files
 
 1.1. Get vireo172 dataset: obtain vireo dataset from the authors via procedures in http://vireo.cs.cityu.edu.hk/VireoFood172/, including the food images in folder 'ready_chinese_food' and the data info files in 'SplitAndIngreLabel'. Save them to <User_root_path> + '/vireo/'.
 
@@ -27,21 +27,20 @@ Step 1. Download datasets and related files
 
 1.3. Download the Pytorch version of WRN50-2 model pretrained on ImageNet 'wide-resnet-50-2-export-5ae25d50.pth' from https://github.com/szagoruyko/functional-zoo/blob/master/wide-resnet-50-2-export.ipynb. Save it to <User_root_path>.
 
-Step 2. Install necessary environment: Python 3.6, Pytorch 0.41, Cuda 9.1.
+##Step 2. Install necessary environment: Python 3.6, Pytorch 0.41, Cuda 9.1.
 
-Step 3. Process datasets
+##Step 3. Process datasets
 
 3.1. Git clone all .py files to <User_root_path>.
 
-3.2. Process vireo172 data: run the following file to get all algorithm inputs and related files. 
 
+3.2. Process vireo172 data: run the following file to get all algorithm inputs and related files. The results will be saved to '/vireo/SplitAndIngreLabel'.
 `python ingre_process-vireo.py --data_path <User_root_path> + '/vireo/SplitAndIngreLabel/'`  
 
-The results will be saved to '/vireo/SplitAndIngreLabel'.
 
 3.3. Process ingredient101 data: run python ingre_process-food101.py --data_path <User_root_path> + '/food-101/data/' --glove_root_path <User_root_path> + '/vireo/SplitAndIngreLabel/'. All algorithm inputs and related files will be saved to '/food-101/data/'
 
-Step 4. Training
+##Step 4. Training
 
 4.1. Open opt.py for one-time configuration for new environments: Set correct paths for root_path and img_path as defined in opt_algorithm() for both datasets.
 
@@ -51,6 +50,6 @@ Step 4. Training
 
 4.4. Training the whole model: run python train.py --dataset 'vireo' --stage 3 --mode 'train' --img_net 'resnet50' --ingre_net 'gru' to train a variant of our model using the vireo172 dataset. More options can be found in opt.py. Hyperparameters can be set in lines 62-92 in train.py (especially the loss weights in lines 81-87). Results are in <User_root_path> + '/vireo/algorithm_results/' - 'train_loss.txt' and 'model_batch_train_loss.txt'.
 
-Step 5. Testing
+##Step 5. Testing
 
 5.1. Testing the whole model: run python test.py --dataset 'vireo' --stage 3 --mode 'test' --img_net 'resnet50' --ingre_net 'gru' to test the varient of our model trained using the vireo172 dataset in Step 4. Hyperparameters can be set in lines 85-97 in test.py. Results are in <User_root_path> + '/vireo/algorithm_results/' - 'test_performance.txt', 'model_batch_test_performance.txt', and 'img2tag.txt'. 
