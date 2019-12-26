@@ -1,5 +1,6 @@
 # Learning Using Privileged Information for Food Recognition
 
+
 **Note: Our implementation provided in this repository is patent-banned: ILO Ref: 2019-243-01, SG Non-Provisional Application No. 10201907991T, Singapore, 29 Aug., 2019. Please contact the Author for commercialization usage.**  
 
 This repository provides our Pytorch implementation of the cross-modal alignment and transfer network (ATNet) presented in "Learning Using Privileged Information for food recognition". Please cite our paper using the following information if our codes are used in your research:
@@ -27,7 +28,9 @@ Please follow the steps below to reproduce ATNet for food recognition:
 
 1.3. Download the Pytorch version of WRN50-2 model pretrained on ImageNet 'wide-resnet-50-2-export-5ae25d50.pth' from https://github.com/szagoruyko/functional-zoo/blob/master/wide-resnet-50-2-export.ipynb. Save it to <User_root_path>.
 
-## Step 2. Install necessary environment: Python 3.6, Pytorch 0.41, Cuda 9.1.
+## Step 2. Install necessary environment: 
+
+Our software dependencies include: Python 3.6, Pytorch 0.41, Cuda 9.1.
 
 ## Step 3. Process datasets
 
