@@ -1,6 +1,6 @@
 # Food
 
-**Note: Our implementation provided in this repository is patent-banned: ILO Ref: 2019-243-01, SG Non-Provisional Application No. 10201907991T, Singapore, 29 Aug., 2019. Please contact the Author for commercialization usage.  
+**Note: Our implementation provided in this repository is patent-banned: ILO Ref: 2019-243-01, SG Non-Provisional Application No. 10201907991T, Singapore, 29 Aug., 2019. Please contact the Author for commercialization usage.**  
 
 This repository provides our Pytorch implementation of the cross-modal alignment and transfer network (ATNet) presented in "Learning Using Privileged Information for food recognition". Please cite our paper using the following information if our codes are used in your research:
 
