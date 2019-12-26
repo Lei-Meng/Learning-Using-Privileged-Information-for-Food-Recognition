@@ -1,8 +1,6 @@
 # Food
 
-```
-Note: Our implementation provided in this repository is patent-banned: ILO Ref: 2019-243-01, SG Non-Provisional Application No. 10201907991T, Singapore, 29 Aug., 2019. Please contact the Author for commercialization usage.  
-```
+**Note: Our implementation provided in this repository is patent-banned: ILO Ref: 2019-243-01, SG Non-Provisional Application No. 10201907991T, Singapore, 29 Aug., 2019. Please contact the Author for commercialization usage.  
 
 This repository provides our Pytorch implementation of the cross-modal alignment and transfer network (ATNet) presented in "Learning Using Privileged Information for food recognition". Please cite our paper using the following information if our codes are used in your research:
 
@@ -18,7 +16,7 @@ This repository provides our Pytorch implementation of the cross-modal alignment
 
 Please follow the steps below to reproduce ATNet for food recognition:
 
-##Step 1. Download datasets and related files
+## Step 1. Download datasets and related files
 
 1.1. Get vireo172 dataset: obtain vireo dataset from the authors via procedures in http://vireo.cs.cityu.edu.hk/VireoFood172/, including the food images in folder 'ready_chinese_food' and the data info files in 'SplitAndIngreLabel'. Save them to <User_root_path> + '/vireo/'.
 
@@ -28,9 +26,9 @@ Please follow the steps below to reproduce ATNet for food recognition:
 
 1.3. Download the Pytorch version of WRN50-2 model pretrained on ImageNet 'wide-resnet-50-2-export-5ae25d50.pth' from https://github.com/szagoruyko/functional-zoo/blob/master/wide-resnet-50-2-export.ipynb. Save it to <User_root_path>.
 
-##Step 2. Install necessary environment: Python 3.6, Pytorch 0.41, Cuda 9.1.
+## Step 2. Install necessary environment: Python 3.6, Pytorch 0.41, Cuda 9.1.
 
-##Step 3. Process datasets
+## Step 3. Process datasets
 
 3.1. Git clone all .py files to <User_root_path>.
 
@@ -44,7 +42,7 @@ Please follow the steps below to reproduce ATNet for food recognition:
 
 `python ingre_process-food101.py --data_path <User_root_path> + '/food-101/data/' --glove_root_path <User_root_path> + '/vireo/SplitAndIngreLabel/'`
 
-##Step 4. Training
+## Step 4. Training
 
 4.1. Open opt.py for one-time configuration for new environments: Set correct paths for root_path and img_path as defined in opt_algorithm() for both datasets.
 
@@ -66,7 +64,7 @@ More options can be found in opt.py. Hyperparameters can be set in lines 62-92 i
 
 More options can be found in opt.py. Hyperparameters can be set in lines 62-92 in train.py (especially the loss weights in lines 81-87). Results are in <User_root_path> + '/vireo/algorithm_results/' - 'train_loss.txt' and 'model_batch_train_loss.txt'.
 
-##Step 5. Testing
+## Step 5. Testing
 
 5.1. Testing the whole model: run the following file to test the varient of our model trained in Step 4. 
 
