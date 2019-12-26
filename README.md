@@ -4,6 +4,7 @@
 
 This repository provides our Pytorch implementation of the cross-modal alignment and transfer network (ATNet) presented in "Learning Using Privileged Information for food recognition". Please cite our paper using the following information if our codes are used in your research:
 
+```
 @inproceedings{meng2019learning,\
   title={Learning Using Privileged Information for Food Recognition},\
   author={Meng, Lei and Chen, Long and Yang, Xun and Tao, Dacheng and Zhang, Hanwang and Miao, Chunyan and Chua, Tat-Seng},\
@@ -12,7 +13,7 @@ This repository provides our Pytorch implementation of the cross-modal alignment
   year={2019},\
   organization={ACM}\
 }
-
+```
 
 Please follow the steps below to reproduce ATNet for food recognition:
 
