@@ -1,7 +1,8 @@
 # Food
 
-
+```
 Note: Our implementation provided in this repository is patent-banned: ILO Ref: 2019-243-01, SG Non-Provisional Application No. 10201907991T, Singapore, 29 Aug., 2019. Please contact the Author for commercialization usage.  
+```
 
 This repository provides our Pytorch implementation of the cross-modal alignment and transfer network (ATNet) presented in "Learning Using Privileged Information for food recognition". Please cite our paper using the following information if our codes are used in your research:
 
@@ -33,10 +34,11 @@ Please follow the steps below to reproduce ATNet for food recognition:
 
 3.1. Git clone all .py files to <User_root_path>.
 
-
+```
 3.2. Process vireo172 data: run the following file to get all algorithm inputs and related files. The results will be saved to '/vireo/SplitAndIngreLabel'.
-`python ingre_process-vireo.py --data_path <User_root_path> + '/vireo/SplitAndIngreLabel/'`  
 
+`python ingre_process-vireo.py --data_path <User_root_path> + '/vireo/SplitAndIngreLabel/'`  
+```
 
 3.3. Process ingredient101 data: run python ingre_process-food101.py --data_path <User_root_path> + '/food-101/data/' --glove_root_path <User_root_path> + '/vireo/SplitAndIngreLabel/'. All algorithm inputs and related files will be saved to '/food-101/data/'
 
