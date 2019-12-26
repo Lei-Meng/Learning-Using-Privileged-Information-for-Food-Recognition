@@ -30,7 +30,7 @@ Please follow the steps below to reproduce ATNet for food recognition:
 
 ## Step 2. Install necessary environment: 
 
-Our software dependencies include: Python 3.6, Pytorch 0.41, Cuda 9.1.
+Our software dependencies include: Python 3.6, Pytorch 0.41, Cuda 9.1, Pillow, ipdb. Install Anaconda3 is recommended to cover most of the packages.
 
 ## Step 3. Process datasets
 
